@@ -19,10 +19,10 @@ export default function BasicMenu({menuname}) {
   };
 
   return (
-    <div  style={{"font-size":"25px" }  }>
+    <div    >
       <Button 
-        className= {Styles.contact}
-          
+                
+       className={Styles.contact}
         aria-controls={open ? 'basic-menu' : undefined}
         aria-haspopup="true"
         aria-expanded={open ? 'true' : undefined}
@@ -31,6 +31,7 @@ export default function BasicMenu({menuname}) {
         {menuname}
       </Button>
       <Menu 
+    
         id="basic-menu"
         anchorEl={anchorEl}
         open={open}

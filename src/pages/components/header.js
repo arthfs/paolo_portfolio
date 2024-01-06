@@ -11,7 +11,7 @@ export default function Header() {
     <Link href = '/' className={styles.menuitem} > Home </Link>  
     <Link href = '../#about' className={styles.menuitem} > About</Link>  
    
-    <BasicMenu menuname='contact'> </BasicMenu>
+    <BasicMenu menuname='contact'> </BasicMenu> 
   
   </div>
   )

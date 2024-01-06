@@ -7,11 +7,14 @@ import Link from 'next/link';
 var width = 300 ,height = 300;
 export default function Home() {
   return ( 
-  <div className={styles.body}>
+ 
+      
+
+      <div className={styles.body}>
   
-          <div id='about' className={styles.ab}>
+      <div id='about' className={styles.ab}>
               <About/>
-          </div>
+      </div>
    
           <div className={styles.bracelets}>
             <Image className = {styles.card}  src='/bracelets/pic1.jpeg' height={height} width={width} alt='pic1'></Image>
@@ -26,6 +29,8 @@ export default function Home() {
             </div>
            
     </div>
+  
+  
   );
 }
 
