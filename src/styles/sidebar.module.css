@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+
+.sidebar{
+    border-right:2px;
+    position: fixed;
+    border-color: black;
+    border-style:solid;
+    left:0;
+    bottom:0;
+    width:20%;
+    min-width: 100px;
+    margin-right:10px;
+    max-width:118px;
+    top:0;
+    margin-top:51px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    padding-top: 30px;
+  
+    align-items: center;
+}
+
+.link{
+    text-decoration-line: none;
+    font-family:Dancing Script;   
+    font-size:17px;
+    color:black;
+    border-radius:10px;
+    border-style:solid;
+    transition: box-shadow 0.7s,opacity 0.9s;
+
+}
+
+.link:hover{
+    box-shadow:4px 4px 4px black;
+}
+
+.link:active{
+    opacity:0.2;
+}
