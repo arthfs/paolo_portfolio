@@ -19,6 +19,20 @@
     
 }
 
+.menu2{
+    background-color: blue;
+    visibility: hidden;
+   
+}
+
+@media ( (max-width :540px))
+{
+    .menu2{
+       
+        background-color: yellow;
+        visibility:visible;
+    }
+}
 
 .contact{
     font-family: Dancing Script;

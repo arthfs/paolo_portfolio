@@ -7,10 +7,12 @@ import Page from './components/content';
 
 
 
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import {context} from "./components/context"
+import { useState } from 'react';
 export default function Home() {
 const {info} = useContext(context);
+
 
 
   return ( 
@@ -23,6 +25,7 @@ const {info} = useContext(context);
                       <About/>
                       
               </div>
+         
               <Page info ={info}></Page>
         </div>
   

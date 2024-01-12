@@ -1,9 +1,9 @@
 body{
    
-        background-image: image("../drawings/pic1");
+        
         background-size: cover;
         background-repeat: repeat;
-        background-image:url("/background1.webp") ;
+        
         background-blend-mode: difference;
  
     
