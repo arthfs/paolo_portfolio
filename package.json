@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "paolo_portfolio",
+=======
+  "name": "paolo",
+>>>>>>> 4c5a6244ece65d39ff2f9bde8605d2f86022034b
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -11,7 +15,12 @@
   "dependencies": {
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
+<<<<<<< HEAD
     "@mui/material": "^5.15.4",
+=======
+    "@mui/material": "^5.15.3",
+    "framer-motion": "^10.17.8",
+>>>>>>> 4c5a6244ece65d39ff2f9bde8605d2f86022034b
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18"

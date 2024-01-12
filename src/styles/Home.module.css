@@ -66,6 +66,7 @@ justify-content: center;
     .bracelets{
         grid-template: "15px 15px";
         display:grid;
+
     }
 
     .card{
