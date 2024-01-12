@@ -1,0 +1,42 @@
+.drawings{
+  color: red;
+  display: flex;  
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  
+}
+
+.picture{
+  
+  margin-bottom: 2em;
+  border: 2px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 20px;
+  border-style: double;
+}
+.body{
+  color: aqua;
+}
+
+.menu 
+{
+  display : flex;
+  justify-content : end;
+  margin-bottom : 40px;
+  flex-direction : row; 
+  color : red;
+  background-color : aqua;
+}
+.menuitem{
+  margin-right : 20px;
+  font-size: 2em;
+}
+
+.footer{
+  display: block;
+  text-wrap: balance;
+  text-align: center;
+  background-color: gray;
+}
