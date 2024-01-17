@@ -4,14 +4,15 @@ import Header from './components/header'
 import Footer from './components/footer'
 import Sidebar from './components/sidebar'
 import Context from './components/context'
-import { useContext, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 
 
 
 export default function App({ Component, pageProps }) {
-  try {console.log(window.screen.width);
-  }
-  catch(e) {console.log(e)}
+
+//  try {console.log(window.screen.width);
+//  }
+//  catch(e) {console.log(e)}
 
   return( 
   <Context >

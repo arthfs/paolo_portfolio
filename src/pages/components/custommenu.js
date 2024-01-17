@@ -4,11 +4,12 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Styles from "../../styles/header.module.css"
 import { Dancing_Script } from 'next/font/google';
+import BasicMenu from './menu';
 
 
 export const font = Dancing_Script ({weight:["400","500"],subsets:["latin"]})
 
-export default function BasicMenu({menuname}) {
+export default function CustomMenu({menuname}) {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -20,16 +21,18 @@ export default function BasicMenu({menuname}) {
 
   return (
     <div    >
-      <Button 
-                
-       className={menuname !='Contact' ? Styles.contact : 'Styles.Contact2' }
+      <div
+      
+       className={'Styles.contact'}
         aria-controls={open ? 'basic-menu' : undefined}
         aria-haspopup="true"
         aria-expanded={open ? 'true' : undefined}
         onClick={handleClick}
       >
-        {menuname}
-      </Button>
+        
+        <img width={40} height ={40} style={{borderRadius:"20px"}} src='/icons/menu-icon.png'></img>
+      </div>
+
       <Menu 
     
         id="basic-menu"
@@ -40,13 +43,14 @@ export default function BasicMenu({menuname}) {
           'aria-labelledby': 'basic-button',
         }}
       > 
-        <MenuItem className={Styles.contact_link} onClick={handleClose}><a href='https://wa.me/c/50939950754' style={{textDecoration:"none",color:"black"}}> Whatsapp </a> </MenuItem>
-        <MenuItem className={Styles.contact_link} onClick={handleClose} > <a href='mailto:paoloarthaiti@gmail.com' style={{textDecoration:"none",color:"black"}}> Gmail </a> </MenuItem>
-        <MenuItem className={Styles.contact_link} onClick={handleClose}>  <a href='https://www.instagram.com/heispaolo/' style={{textDecoration:"none",color:"black"}} >Instagram</a></MenuItem>
-       
+        <MenuItem className={Styles.contact_link} onClick={handleClose}><a href='/' style={{textDecoration:"none",color:"black"}}> Home </a> </MenuItem>
+        <MenuItem className={Styles.contact_link} onClick={handleClose} > <a href='#./about' style={{textDecoration:"none",color:"black"}}> About </a> </MenuItem>
+       <BasicMenu menuname={"Contact"}></BasicMenu>    
        
       </Menu>
       
     </div>
   );
 }
+//      <MenuItem className={Styles.contact_link} onClick={handleClose}>  <a href='' style={{textDecoration:"none",color:"black"}} >Contact</a></MenuItem>
+   

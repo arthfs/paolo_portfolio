@@ -15,6 +15,7 @@ const {info} = useContext(context);
 
 
 
+
   return ( 
    
       
@@ -25,7 +26,7 @@ const {info} = useContext(context);
                       <About/>
                       
               </div>
-         
+            
               <Page info ={info}></Page>
         </div>
   

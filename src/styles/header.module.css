@@ -2,7 +2,7 @@
 
 .menu{
     padding:9px;
-    padding-right:20px;
+    padding-right:10px;
     display : flex;
     position:fixed;
     right:0px;
@@ -19,19 +19,22 @@
     
 }
 
+.contact2{
+    background-color: red;
+    color:yellow;
+}
+
 .menu2{
-    background-color: blue;
-    visibility: hidden;
+   
+    justify-content: end;
+    display:flex;
+    
    
 }
 
 @media ( (max-width :540px))
 {
-    .menu2{
-       
-        background-color: yellow;
-        visibility:visible;
-    }
+   
 }
 
 .contact{
@@ -79,6 +82,10 @@
 
         
 
+    } 
+
+    .menu{
+        padding:3px;
     }
     
     .contact{
